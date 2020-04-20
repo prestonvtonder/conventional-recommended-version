@@ -6,6 +6,10 @@
 [![Follow JamieMason on GitHub](https://img.shields.io/github/followers/JamieMason.svg?style=social&label=Follow)](https://github.com/JamieMason)
 [![Follow fold_left on Twitter](https://img.shields.io/twitter/follow/fold_left.svg?style=social&label=Follow)](https://twitter.com/fold_left)
 
+> **_NOTE_**: This package is a fork of JamieMason's repo https://github.com/JamieMason/conventional-recommended-version
+> * The only the feature that I have added is the ability to use conventional commits without a scope. Previously these
+    sorts of commits would have no impact on versioning.
+
 Using a [conventional-changelog](https://github.com/ajoslin/conventional-changelog) commit history, determine the
 current version number of your project.
 
