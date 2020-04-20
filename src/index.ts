@@ -3,8 +3,8 @@ import { ICommit } from 'logservable/dist/typings';
 import { CommitAssertion, Handler, IOptions, IVersion, VersionMap } from './typings';
 
 const isBreakingChange: CommitAssertion = ({ body = '' }) => body.search(/BREAKING CHANGE/) !== -1;
-const isFeature: CommitAssertion = ({ subject = '' }) => subject.startsWith('feat(');
-const isFix: CommitAssertion = ({ subject = '' }) => subject.startsWith('fix(');
+const isFeature: CommitAssertion = ({ subject = '' }) => /feat(?=\(\w+\): .+)|feat: .+/.test(subject);
+const isFix: CommitAssertion = ({ subject = '' }) => /fix(?=\(\w+\): .+)|fix: .+/.test(subject);
 const isRelease: CommitAssertion = ({ subject = '' }) => subject.startsWith('chore(release)');
 
 const toSemver = ({ major, minor, patch }: IVersion, postfix: string = ''): string =>
