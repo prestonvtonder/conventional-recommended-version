@@ -1,7 +1,7 @@
 {
-  "name": "conventional-recommended-version",
+  "name": "conventional-recommended-version-edited",
   "description": "Determine the semantic version number of your project",
-  "version": "0.5.2",
+  "version": "0.0.0",
   "author": "Jamie Mason <jamie@foldleft.io> (https://github.com/JamieMason)",
   "bin": {
     "conventional-recommended-version": "dist/bin.js"
@@ -21,7 +21,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/JamieMason/conventional-recommended-version#readme",
+  "homepage": "https://github.com/prestonvtonder/conventional-recommended-version#readme",
   "keywords": [
     "changelog",
     "commitizen",
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "JamieMason/conventional-recommended-version",
+  "repository": "prestonvtonder/conventional-recommended-version",
   "scripts": {
     "build": "tsc --project .",
     "format": "prettier --write '**/*.md' './src/**/*.ts'",
